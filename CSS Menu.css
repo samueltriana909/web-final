@@ -1,0 +1,835 @@
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+* {
+    * {
+    font-family:"Permanent Marker", cursive;
+}
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:linear-gradient(135deg,#050505,#111827,#3b0000);
+    overflow-x:hidden;
+}
+
+/* Luces decorativas */
+body::before{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:rgba(0,140,255,.15);
+    border-radius:50%;
+    top:-200px;
+    left:-150px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:rgba(255,0,128,.15);
+    border-radius:50%;
+    bottom:-200px;
+    right:-150px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+/* ===== MENÚ ===== */
+
+.menu{
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    color:#ff66b3;
+    margin-bottom:20px;
+}
+
+.section-text{
+    text-align:center;
+    color:white;
+    margin-bottom:40px;
+}
+
+.cards{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* ===== PRODUCTOS ===== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+.card{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    overflow:hidden;
+    backdrop-filter:blur(15px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 0 30px rgba(255,0,128,.3);
+}
+
+.img-space{
+    height:260px;
+    background:linear-gradient(135deg,#1f2937,#111827);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#9ca3af;
+    font-size:1.2rem;
+    font-weight:600;
+}
+.img-space img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+.card-content{
+    padding:25px;
+    text-align:center;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    font-size:1.8rem;
+}
+
+.card-content p{
+    color:#d1d5db;
+}
+
+.price{
+    margin-top:20px;
+    font-size:2rem;
+    font-weight:800;
+    color:#FFD700;
+}
+
+/* ===== QR ===== */
+
+.qr-section{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.qr-box{
+    display:inline-block;
+    background:white;
+    padding:20px;
+    border-radius:25px;
+    margin-top:20px;
+}
+
+.qr-box img{
+    width:220px;
+}
+
+.qr-text{
+    margin-top:15px;
+    color:#cbd5e1;
+}
+/* PERSONALIZACIÓN NORMAL */
+
+.personalizar-box{
+    max-width:700px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,0,60,.08);
+    border:1px solid rgba(255,0,60,.3);
+    backdrop-filter:blur(15px);
+}
+
+
+/* TÍTULO DE PERSONALIZACIÓN */
+
+.personalizar-box h3{
+    font-family:"Permanent Marker", cursive;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:20px;
+
+    text-shadow:
+        2px 2px 0px #8000ff,
+        -2px -2px 0px #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff,
+        0 0 20px rgba(0,255,255,.7);
+}
+
+
+/* TEXTOS */
+
+.personalizar-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+
+    font-family:"Permanent Marker", cursive;
+    font-weight:400;
+    color:#ffffff;
+
+    text-shadow:
+        1px 1px 0px #8000ff,
+        0 0 5px #ff0080;
+}
+
+
+/* SELECT */
+
+.personalizar-box select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    font-family:"Poppins", sans-serif;
+    font-size:1rem;
+    margin-bottom:10px;
+    background:white;
+}
+
+
+/* EXTRAS */
+
+.extras{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:10px;
+    margin-top:15px;
+}
+
+.extras label{
+    background:rgba(255,255,255,.08);
+    padding:10px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.extras label:hover{
+    background:rgba(255,0,60,.2);
+    transform:scale(1.03);
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.personalizar .section-title{
+    font-family:"Permanent Marker", cursive;
+    color:#ffffff;
+
+    text-shadow:
+        2px 2px 0px #8000ff,
+        -2px -2px 0px #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff,
+        0 0 20px rgba(0,255,255,.7);
+}
+
+
+/* NOTA */
+
+.nota-personalizar{
+    text-align:center;
+    margin-top:20px;
+    color:#ffd1dc;
+}
+
+.diabeticos{
+
+    max-width:700px;
+
+    margin: 150px auto 40px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:rgba(34,197,94,.08);
+
+    border:1px solid rgba(34,197,94,.3);
+
+    backdrop-filter:blur(15px);
+}
+
+
+/* TÍTULO */
+
+.diabeticos h3{
+
+    font-family:"Permanent Marker", cursive;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    text-shadow:
+        2px 2px 0 #8000ff,
+        -2px -2px 0 #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff,
+        0 0 20px rgba(0,255,255,.7);
+}
+
+
+/* TEXTOS */
+
+.diabeticos label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-family:"Permanent Marker", cursive;
+
+    font-weight:400;
+
+    color:white;
+
+    text-shadow:
+        1px 1px 0 #8000ff,
+        0 0 5px #ff0080;
+}
+
+
+/* SELECT */
+
+.diabeticos select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-family:"Poppins", sans-serif;
+
+    font-size:1rem;
+
+    margin-bottom:10px;
+}
+
+
+/* EXTRAS */
+
+.extras-diabeticos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+
+/* OPCIONES */
+
+.extras-diabeticos label{
+
+    background:rgba(255,255,255,.05);
+
+    padding:10px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+
+.extras-diabeticos label:hover{
+
+    background:rgba(255,0,128,.15);
+
+    transform:scale(1.03);
+
+}
+
+/*=====RGB MENU =====*/
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 20px;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        #ff0080,
+        #8000ff,
+        #00ffff,
+        #00ff00,
+        #ffff00,
+        #ff0080
+    );
+
+    background-size: 400% 400%;
+    animation: rgb 4s linear infinite;
+
+    filter: blur(8px);
+    opacity: 0.4;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid transparent;
+
+    background:
+        linear-gradient(#1b1b3a, #1b1b3a) padding-box,
+        linear-gradient(
+            90deg,
+            #ff0080,
+            #8000ff,
+            #00ffff,
+            #00ff00,
+            #ffff00,
+            #ff0080
+        ) border-box;
+
+    background-size: 100% 100%, 400% 400%;
+    animation: rgb 4s linear infinite;
+
+    /* Brillo RGB */
+    box-shadow:
+        0 0 5px #ff0080,
+        0 0 10px #00ffff,
+        0 0 20px #8000ff;
+
+    transition: transform 0.3s ease;
+}
+
+.card h3,
+.section-title {
+    font-family: "Permanent Marker", cursive;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.card h3 {
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    text-shadow:
+        2px 2px 0px #8000ff,
+        0 0 8px rgba(255, 0, 200, 0.5);
+}
+
+/* EFECTO GRAFITI / NEÓN PARA LOS TEXTOS */
+.card h3,
+.section-title,
+.price,
+nav a,
+.marca,
+.diabeticos,
+.extras,
+.extras-diabeticos,
+.qr-text,
+.section-title,
+.section-text,
+.qr-section,
+.card-content,
+.card::before,
+.personalizar-box,
+.card:hover,
+.barra,
+.barra.scrolled,
+.nota-personalizar,
+.card:hover,
+.logo {
+    font-family: "Permanent Marker", cursive;
+    color: #ffffff;
+
+    text-shadow:
+        2px 2px 0px #8000ff,
+        -2px -2px 0px #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff,
+        0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow:
+        0 0 10px #ff0080,
+        0 0 25px #00ffff,
+        0 0 40px #8000ff;
+}
+
+/* Animación RGB */
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,.6);
+    margin-top:40px;
+}
+
+/* ===== FONDO ANIMADO DEL MENÚ ===== */
+
+.pagina-menu{
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,0,0,.85),
+        rgba(0,120,200,.45),
+        rgba(180,0,70,.45)
+    ),
+    url("Fondo.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+/* Capa de nieve animada */
+
+.pagina-menu::before{
+
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-image:
+    radial-gradient(circle, rgb(15, 49, 240) 3px, transparent 4px),
+    radial-gradient(circle, #bdefff 5px, transparent 6px),
+    radial-gradient(circle, rgb(15, 190, 243) 2px, transparent 3px);
+
+    background-size:
+    70px 70px,
+    120px 120px,
+    50px 50px;
+
+
+    animation:nieveCaer 10s linear infinite;
+
+    opacity:.5;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+
+/* Segunda capa para darle profundidad */
+
+.pagina-menu::after{
+
+    content:"";
+    position:fixed;
+    top:-100px;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-image:
+    radial-gradient(circle,#3849e6 4px,transparent 5px);
+
+    background-size:100px 100px;
+
+    animation:nieveRapida 6s linear infinite;
+
+    opacity:.25;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+
+/* Movimiento de nieve */
+
+@keyframes nieveCaer{
+
+    from{
+        background-position:
+        0 -200px,
+        50px -300px,
+        100px -400px;
+    }
+
+    to{
+        background-position:
+        100px 100vh,
+        200px 100vh,
+        0 100vh;
+    }
+
+}
+
+
+@keyframes nieveRapida{
+
+    from{
+        transform:translateY(-100px);
+    }
+
+    to{
+        transform:translateY(100vh);
+    }
+
+}
+
+
+/* Contenido encima de la animación */
+
+.menu,
+.qr-section,
+footer{
+    position:relative;
+    z-index:2;
+}
+/* ===== BARRA DE NAVEGACIÓN ===== */
+
+.barra{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:85px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:10px 50px;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+    z-index:1000;
+
+    transition:.4s;
+
+}
+
+
+/* Cuando baja la página */
+
+.barra.scrolled{
+
+    background:rgba(0,0,0,.85);
+
+    box-shadow:0 5px 25px rgba(255,0,128,.3);
+
+}
+
+
+/* Logo y nombre */
+
+.marca{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+.marca img{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #ff0080;
+
+}
+
+
+.marca h2{
+    font-size:1.8rem;
+    font-family:"Permanent Marker", cursive;
+    color:#ffffff;
+    
+    text-shadow:
+        2px 2px 0 #8000ff,
+        -2px -2px 0 #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff,
+        0 0 20px rgba(0,255,255,.7);
+}
+
+
+/* Botones del menú */
+
+.nav{
+
+    display:flex;
+    gap:25px;
+
+}
+
+
+.nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-family:"Permanent Marker", cursive;
+    font-weight:400;
+    transition:.3s;
+    position:relative;
+
+    text-shadow:
+        2px 2px 0 #8000ff,
+        -2px -2px 0 #ff0080,
+        0 0 5px #ff0080,
+        0 0 10px #8000ff;
+}
+
+
+/* Línea animada debajo */
+
+.nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:3px;
+
+    background:#ff0080;
+
+    transition:.3s;
+
+}
+
+
+.nav a:hover::after{
+
+    width:100%;
+
+}
+
+
+.nav a:hover{
+
+    color:#ff66b3;
+
+}
+/* ===== REDES SOCIALES DEL FOOTER ===== */
+.redes-sociales{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:18px 0;
+}
+
+.redes-sociales a{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:20px;
+    color:#fff;
+    text-decoration:none;
+    font-family:"Permanent Marker", cursive;
+    background:linear-gradient(90deg,#ff0080,#8000ff,#00aaff);
+    box-shadow:0 0 10px rgba(255,0,128,.45);
+    transition:.3s;
+}
+
+.redes-sociales a:hover{
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 0 20px rgba(0,255,255,.65);
+}
+
+footer p{
+    color:#fff;
+    margin:8px 0 0;
+}
+
+/* ===== REDES SOCIALES ===== */
+.redes-sociales{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:20px 0;
+}
+.redes-sociales a{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:25px;
+    color:#fff;
+    text-decoration:none;
+    background:linear-gradient(90deg,#ff0080,#8000ff,#00aeff);
+    text-shadow:0 0 5px rgba(0,0,0,.7);
+    transition:.3s;
+}
+.redes-sociales a:hover{transform:translateY(-3px) scale(1.05)}
